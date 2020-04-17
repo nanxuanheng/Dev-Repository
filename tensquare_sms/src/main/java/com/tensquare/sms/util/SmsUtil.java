@@ -2,6 +2,12 @@ package com.tensquare.sms.util;
 
 import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.IAcsClient;
+import com.aliyuncs.exceptions.ClientException;
+import com.aliyuncs.profile.DefaultProfile;
+import com.aliyuncs.profile.IClientProfile;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.aliyuncs.dysmsapi.model.v20170525.SendSmsRequest;
 import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.aliyuncs.exceptions.ClientException;
@@ -58,7 +64,7 @@ public class SmsUtil {
         String sign_name =env.getProperty("aliyun.sms.signName");
         request.setSignName(sign_name);
         //必填:短信模板‐可在短信控制台中找到
-        request.setTemplateCode(template_code);
+        request.setTempteClaode(template_code);
         //可选:模板中的变量替换JSON串,如模板内容为"亲爱的${name},您的验证码为${code}"时,此处的值为
         request.setTemplateParam(param);
         //选填‐上行短信扩展码(无特殊需求用户请忽略此字段)
