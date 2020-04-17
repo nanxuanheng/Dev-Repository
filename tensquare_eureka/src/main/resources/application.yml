@@ -1,0 +1,8 @@
+server:
+  port: 6868
+eureka:
+  client:
+    register-with-eureka: false #是否将本服务注册eureka服务端
+    fetch-registry: false #是否从eureka server获取信息
+    service-url:
+      defaultZone: http://localhost:6868/eureka #配置客户（各个微服务）端跟eureka服务端交互地址

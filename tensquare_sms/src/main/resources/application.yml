@@ -1,0 +1,13 @@
+spring:
+  rabbitmq:
+    addresses: 192.168.89.143
+    port: 5672
+  application:
+    name: tensquare-sms
+server:
+  port: 9009
+aliyun:
+  sms:
+    accessKeyId: LTAIbzuUhxVW8GDT
+    accessKeySecret:  SXEYEjZTnSa2uo2Pf77llrXt2XhvjC
+    signName: 速运

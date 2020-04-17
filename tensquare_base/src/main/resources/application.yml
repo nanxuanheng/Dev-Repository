@@ -1,0 +1,18 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: tensquare-base  #微服务名称将来通过springcloud统一管理时要用到，名称不能写下划线
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.153.133:3306/tensquare_base?characterEncoding=UTF8 #避免乱码
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    generate-ddl: true #自动建表
+    show-sql: true
+data:
+    mongodb:
+      host: 192.168.153.133
+      database: spitdb
