@@ -7,6 +7,7 @@ import entity.PageResult;
 import entity.Result;
 import entity.StatusCode;
 import io.jsonwebtoken.Claims;
+import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -16,7 +17,6 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 import util.JwtUtil;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;

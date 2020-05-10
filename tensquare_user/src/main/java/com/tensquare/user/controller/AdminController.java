@@ -117,7 +117,7 @@ public class AdminController {
 			map.put("token", token);
 			return new Result(true, StatusCode.OK, "登陆成功！", map);
 		}
-		return new Result(false, StatusCode.ERROR, "用户名或者密码错误！");
+		return new Result(false, StatusCode.LOGIN_ERROR, "用户名或者密码错误！");
 	}
 	
 }

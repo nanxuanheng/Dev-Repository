@@ -4,7 +4,29 @@
 文章微服务：9004
 活动微服务：9005
 吐槽微服务：9006
+搜索微服务：9007
+用户微服务：9008
+短信微服务：9009
+交友微服务：9010
 
+前台系统网关微服务：9011
+后台系统网关微服务：9012
 
+redis端口：6379
+mongodb端口：27017
+elasticsearch --- http端口：9200  tcp端口：9300
+rabbitmq tcp端口：5672
 
-mongoDB端口：27017
+私有镜像仓库地址 端口：5000
+
+搭建自助git（gogs）服务 :3000
+**gogs用户名 root 密码itcast
+
+jenkins:端口 8888 用户名 root
+**新建管理员 root  itcast
+
+Rancher:容器管理
+http://192.168.153.135:9090
+
+接口文档：swagger
+localhost:801

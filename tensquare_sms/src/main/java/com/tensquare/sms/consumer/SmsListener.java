@@ -1,6 +1,7 @@
 package com.tensquare.sms.consumer;
 
 
+import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.aliyuncs.exceptions.ClientException;
 import com.tensquare.sms.util.SmsUtil;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
